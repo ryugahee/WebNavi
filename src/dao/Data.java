@@ -1,4 +1,4 @@
-package WebNavi.src.Model;
+package WebNavi.src.dao;
 
 import java.util.Stack;
 

@@ -1,7 +1,6 @@
 package WebNavi.src;
 
-import WebNavi.src.Controller.WebController;
-import java.util.Scanner;
+import WebNavi.src.controller.WebController;
 
 public class Web {
   public static void main(String[] args) {

@@ -1,11 +1,12 @@
-package WebNavi.src.Service;
-import WebNavi.src.Model.Data;
-import java.util.Scanner;
+package WebNavi.src.service;
+import WebNavi.src.dao.Data;
+import WebNavi.src.singleton.Singleton;
+
 public class WebService {
   Data data = new Data();
-  Scanner sc = new Scanner(System.in);
+  Singleton inst2 = Singleton.getInstance();
   public void visit() {
-    String str2 = sc.next();
+    String str2 = inst2.sc.next();
     data.back.push(data.status);
     data.status = str2;
     System.out.println(data.status);
@@ -31,7 +32,4 @@ public class WebService {
       System.out.println("Ignored");
     }
   }
-
-
-
 }
